@@ -4,8 +4,8 @@ public:
         long long sum = 0;
 
         while(x != 0) {
-            int digit = x % 10;
-            sum = sum * 10 + digit;
+         
+            sum = sum * 10 + (x%10);
             x /= 10;
         }
 
@@ -13,6 +13,6 @@ public:
             return 0;
         }
 
-        return (int)sum;
+        return sum;
     }
 };
